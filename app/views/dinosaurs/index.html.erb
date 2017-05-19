@@ -1,4 +1,4 @@
-<h1>Dinosaurs</h1>
+<h1>Pokemons</h1>
 
 <% @dinosaurs.each do |dinosaur| %>
   <p><%= "Dinosaur: " %><%= link_to dinosaur.name, dinosaur_path(dinosaur.id) %>&emsp;<%= "Age: " %><%= dinosaur.age %></p>
