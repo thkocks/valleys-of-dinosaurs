@@ -1,5 +1,9 @@
 <h1>Dinosaurs</h1>
 
 <% @dinosaurs.each do |dinosaur| %>
-  <p><%= "Dinosaur: " %><%= dinosaur.name %>&emsp;<%= "Age: " %><%= dinosaur.age %></p>
+  <p><%= "Dinosaur: " %><%= link_to dinosaur.name, dinosaur_path(dinosaur.id) %>&emsp;<%= "Age: " %><%= dinosaur.age %></p>
 <% end %>
+
+<hr>
+
+<%= link_to "[New Dinosaur]", new_dinosaur_path %>
